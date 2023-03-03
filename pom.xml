@@ -73,8 +73,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+				<mainClass>com.eureka.eurekanamingserver.EurekaNamingServerApplication</mainClass>
+				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<configuration>
@@ -98,7 +101,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 		</plugins>
 		<finalName>eureka-naming-server</finalName>
 	</build>
