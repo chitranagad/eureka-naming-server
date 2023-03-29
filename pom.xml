@@ -67,17 +67,16 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-				<mainClass>com.eureka.eurekanamingserver.EurekaNamingServerApplication</mainClass>
+					<mainClass>com.eureka.eurekanamingserver.EurekaNamingServerApplication</mainClass>
 				</configuration>
 			</plugin>
-			<!-- <plugin>
+			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<configuration>
@@ -97,13 +96,11 @@
 							<goal>push</goal>
 						</goals>
 						<inherited>false</inherited>
-						<configuration>
-						</configuration>
+						<configuration></configuration>
 					</execution>
 				</executions>
-			</plugin> -->
+			</plugin>
 		</plugins>
 		<finalName>eureka-naming-server</finalName>
 	</build>
-
 </project>
